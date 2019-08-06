@@ -1,8 +1,10 @@
+require 'pry'
+
 def map(source_array)
-  new = []
+  new_array = []
   i = 0
   while i < source_array.length do
-    new.push( yield(source_array[i]) )
+    new_array.push( yield(source_array[i]) )
     i += 1
   end
   return new
